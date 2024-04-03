@@ -72,7 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (consecutiveMatches >= 2) {
-            alert(`Combo! ${consecutiveMatches} consecutive matches!`);
+            alert("Combo!" + consecutiveMatches + "consecutive matches!");
+            console.log(consecutiveMatches);
             // Perform any action you want for the combo
         }
     } else {
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosenId = [];
 
     if (cardsWon.length === cardArray.length / 2) {
-            alert(`You got them all, Combo! ${consecutiveMatches} consecutive matches!`);
+            alert(`You got them all!`);
     }
 }
 
