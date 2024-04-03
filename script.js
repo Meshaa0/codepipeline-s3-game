@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-   function checkForMatch() {
+function checkForMatch() {
     const cards = document.querySelectorAll('#game-board img');
     const firstCardId = cardsChosenId[0];
     const secondCardId = cardsChosenId[1];
@@ -72,8 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (consecutiveMatches >= 2) {
-            alert("Combo!" + consecutiveMatches + "consecutive matches!");
-            console.log(consecutiveMatches);
+            alert('Combo! ' + consecutiveMatches + ' consecutive matches!');
             // Perform any action you want for the combo
         }
     } else {
@@ -85,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosenId = [];
 
     if (cardsWon.length === cardArray.length / 2) {
-            alert(`You got them all!`);
+        alert('Congratulations! You found them all!');
     }
 }
 
